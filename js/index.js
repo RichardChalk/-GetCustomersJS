@@ -34,6 +34,11 @@ function showCustomersTable() {
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
 
+  // 'headerText' är bara ett variabelnamn som tillfälligt innehåller
+  // ett värde i taget från arrayen headers
+  // (först "Name", sedan "Age", sedan "Gender").
+  // Varje gång loopen körs sätts texten i ett <th>-element till just
+  // det värdet.
   const headers = ["Name", "Age", "Gender"];
   headers.forEach((headerText) => {
     const th = document.createElement("th");
